@@ -1,0 +1,40 @@
+nav {
+    height: 65px;
+    background-color: transparent;
+    line-height: normal;
+}
+
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    height: 65px;
+   /* background-color: #909090;*/
+    background-image: linear-gradient(90deg, mediumturquoise, dodgerblue);
+    font-family: "arial", "helvetica", sans-serif;
+}
+
+.left-side {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    padding: 10px 20px;
+    color: white;
+    width: auto;
+    justify-self: center;
+}
+
+.link:hover {
+    background-color: rgba(50, 115, 220, 0.3);
+    color: white;
+}
+

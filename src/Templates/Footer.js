@@ -1,9 +1,10 @@
 import React from 'react'
+import '../styles/Footer.css'
 
 export default class Footer extends React.Component {
     render() {
         return (
-            <div>Powered by Group Name</div>
+            <footer className="footer">Powered by Group Name</footer>
         )
     }
 }

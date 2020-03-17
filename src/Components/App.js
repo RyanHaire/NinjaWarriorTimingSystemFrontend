@@ -10,12 +10,12 @@ export default class App extends Component {
         return (
             <div>   
                 <BrowserRouter>
+                    <Header></Header>
                     <div>
-                        <Header></Header>
                         <Route path='/' exact component={Home}></Route>
                         <Route path='/leaderboards' component={Leaderboards}></Route>
-                        <Footer></Footer>
                     </div>
+                    <Footer></Footer>
                 </BrowserRouter>
             </div>
         )

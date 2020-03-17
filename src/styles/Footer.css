@@ -1,0 +1,15 @@
+.footer {
+    background-image: linear-gradient(90deg, mediumturquoise, dodgerblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    font-family: "arial", "helvetica", sans-serif;
+    font-size: 18px;
+}

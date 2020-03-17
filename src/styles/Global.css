@@ -1,0 +1,13 @@
+html {
+    min-height: 100%;
+    font-size: 18px;
+}
+
+main {
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
