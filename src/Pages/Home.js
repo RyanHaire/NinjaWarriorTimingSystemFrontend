@@ -11,10 +11,14 @@ export default class Home extends Component {
     render() {
         return (
             <main>
-                <Card name="course 1" content="this is for more information of the speed wall"/>
-                <Card name="course 2" content="this is for more information of the speed wall"/>
-                <Card name="course 3" content="this is for more information of the speed wall"/>
-                <Card name="course 4" content="this is for more information of the speed wall"/>
+                <Card name="course 1" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis vitae sem bibendum, posuere lectus congue, condimentum sem."/>
+                <Card name="course 2" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis vitae sem bibendum, posuere lectus congue, condimentum sem."/>
+                <Card name="course 3" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis vitae sem bibendum, posuere lectus congue, condimentum sem."/>
+                <Card name="course 4" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis vitae sem bibendum, posuere lectus congue, condimentum sem."/>
             </main>
         )
     }

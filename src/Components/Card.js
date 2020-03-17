@@ -6,21 +6,18 @@ import '../styles/Global.css';
 export default class Card extends Component {
     render() {
         return (
-            <div className="Card">
+            <div className="card">
                 <div className='card-top'>
                     <img alt="picture of speed wall" src="#"></img>
                 </div>
-                <hr></hr>
                 <div className='card-bottom'>
-                    <div className='card-name'>
-                        {this.props.name}
+                    <div className='card-title'>
+                        <h5>{this.props.name}</h5>
                     </div>
-                    <div className='card-content'>
+                    <div className='card-info'>
                         {this.props.content}
                     </div>
-                    <div>
-                        <Link to="/leaderboards" className="Button">See the leaderboard!</Link>
-                    </div>
+                    <Link to="/leaderboards" className="card-link">See the leaderboard!</Link>
                 </div>
             </div>
         )

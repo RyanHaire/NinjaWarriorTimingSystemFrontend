@@ -1,11 +1,15 @@
-.Card {
+.card {
     display: flex;
     flex-direction: column;
     width: 350px;
-    border-radius: 15px 50px;
-    padding: 12px;
-    border: 1px solid #808080;
+    height: 375px;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
     margin: 20px;
+    font-size: 18px;
+    background-color: white;
+    text-overflow: ellipsis;
+    /*box-shadow: 5px 10px 15px #808080;*/
 }
 
 .card-top {
@@ -13,12 +17,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
+    height: 40%;
 }
+
 
 .card-bottom {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    text-align: left;
+}
+
+
+.card-title {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-link {
+    color: white;
+    padding: 15px 10px;
+    background-color: #94C83D;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #808080;
 }

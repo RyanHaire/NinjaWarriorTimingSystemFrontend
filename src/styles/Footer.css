@@ -1,5 +1,6 @@
 .footer {
-    background-image: linear-gradient(90deg, mediumturquoise, dodgerblue);
+    /*background-image: linear-gradient(90deg, mediumturquoise, dodgerblue);*/
+    background-color: #94C83D;
     display: flex;
     justify-content: center;
     align-items: center;

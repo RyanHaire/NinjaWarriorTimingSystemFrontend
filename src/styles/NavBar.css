@@ -2,17 +2,19 @@ nav {
     height: 65px;
     background-color: transparent;
     line-height: normal;
+
 }
 
-
-.Navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
     height: 65px;
    /* background-color: #909090;*/
-    background-image: linear-gradient(90deg, mediumturquoise, dodgerblue);
+    /*background-image: linear-gradient(90deg, mediumturquoise, dodgerblue);*/
+    /*background-image: linear-gradient(90deg, mediumturquoise, dodgerblue);*/
+    background-color: #94C83D;
     font-family: "arial", "helvetica", sans-serif;
 }
 
