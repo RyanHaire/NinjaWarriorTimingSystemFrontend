@@ -4,11 +4,12 @@ import '../styles/Card.css';
 import '../styles/Global.css';
 
 export default class Card extends Component {
+
     render() {
         return (
             <div className="card">
                 <div className='card-top'>
-                    <img alt="picture of speed wall" src="#"></img>
+                    <img alt="speed wall" src="#"></img>
                 </div>
                 <div className='card-bottom'>
                     <div className='card-title'>
@@ -17,7 +18,7 @@ export default class Card extends Component {
                     <div className='card-info'>
                         {this.props.content}
                     </div>
-                    <Link to="/leaderboards" className="card-link">See the leaderboard!</Link>
+                    <Link to={{pathname: `/leaderboards/${this.props.id}`}} className="card-link" params={{id: this.props.id}}>See the leaderboard!</Link>
                 </div>
             </div>
         )
