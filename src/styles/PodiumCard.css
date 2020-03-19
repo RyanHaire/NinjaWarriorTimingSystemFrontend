@@ -1,14 +1,16 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 375px;
+    position: relative;
+    width: 220px;
+    height: 275px;
     justify-content: space-around;
     border: 1px solid lightgrey;
-    margin: 20px;
+    margin: 10px;
     font-size: 18px;
     background-color: white;
     text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
     /*box-shadow: 5px 10px 15px #808080;*/
 }
 
@@ -22,16 +24,24 @@
 
 .card-bottom {
     display: flex;
-    height: 60%;
+    height: 30%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 
 .card-title {
+    position: absolute;
+    top: 20px;
     padding: 5px;
+}
+
+.card-title-h {
+    padding: 10px 20px;
+    border: 2px solid black;
 }
 
 .card-info {
@@ -61,4 +71,19 @@
     color: white;
     background-color: rgb(104, 163, 1);
     box-shadow: none;
+}
+
+.card-top-medal {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 125px;
+}
+
+.card-top-image {
+    background-color: lightslategray;
+    width: 120px;
+    margin-top: 20px;
+    height: 120px;
+    border-radius: 50%;
 }

@@ -1,6 +1,7 @@
 html {
     height: 100%;
     font-size: 18px;
+    font-style: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -9,7 +10,8 @@ body {
 }
 
 main {
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
     padding-top: 12px;
     padding-right: 12px;
     padding-left: 12px;

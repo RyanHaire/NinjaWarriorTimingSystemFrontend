@@ -13,10 +13,10 @@ export default class Card extends Component {
                 </div>
                 <div className='card-bottom'>
                     <div className='card-title'>
-                        <h5>{this.props.name}</h5>
+                        <h3>{this.props.name}</h3>
                     </div>
                     <div className='card-info'>
-                        {this.props.content}
+                        <p className="card-info-p">{this.props.content}</p>
                     </div>
                     <Link to={{pathname: `/leaderboards/${this.props.id}`}} className="card-link" params={{id: this.props.id}}>See the leaderboard!</Link>
                 </div>
