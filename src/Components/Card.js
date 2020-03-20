@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
 import '../styles/Card.css';
-import '../styles/Global.css';
 
 export default class Card extends Component {
 
@@ -9,7 +8,7 @@ export default class Card extends Component {
         return (
             <div className="card">
                 <div className='card-top'>
-                    <img alt="speed wall" src="#"></img>
+                    <img className="card-top-img" alt="speed wall" src="/images/speed-wall.jpg"></img>
                 </div>
                 <div className='card-bottom'>
                     <div className='card-title'>

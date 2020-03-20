@@ -16,14 +16,14 @@ export default class PodiumCard extends Component {
 
     render() {
         return (
-            <div className="card">
-                <div className='card-top'>
-                    <div className="card-top-image"></div>
-                    <div className="card-top-medal">{this.checkRank(this.props.rank)}</div>
+            <div className="card-podium">
+                <div className='card-top-podium'>
+                    <div className="card-top-image-podium"></div>
+                    <div className="card-top-medal-podium">{this.checkRank(this.props.rank)}</div>
                 </div>
-                <div className='card-bottom'>
-                    <div className='card-title'>
-                        <h3 className="card-title-h">{this.props.firstName + " " + this.props.lastName}</h3>
+                <div className='card-bottom-podium'>
+                    <div className='card-title-podium'>
+                        <h3 className="card-title-h-podium">{this.props.firstName + " " + this.props.lastName}</h3>
                     </div>
                 </div>
             </div>

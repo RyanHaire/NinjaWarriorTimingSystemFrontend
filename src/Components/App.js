@@ -16,6 +16,8 @@ export default class App extends Component {
                         <Switch>
                             <Route path='/' exact component={Home}></Route>
                             <Route path='/leaderboards/:id' component={Leaderboards}/>
+                            <Route path='/leaderboards' component={Leaderboards}/>
+                            
                         </Switch>
                         
                     </div>

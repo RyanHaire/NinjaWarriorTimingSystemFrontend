@@ -4,7 +4,7 @@ import '../styles/Footer.css'
 export default class Footer extends React.Component {
     render() {
         return (
-            <footer className="footer">Powered by Group Name</footer>
+            <footer className="footer">Powered by </footer>
         )
     }
 }
