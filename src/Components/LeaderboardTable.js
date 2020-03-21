@@ -38,6 +38,7 @@ export default class LeaderboardTable extends Component {
                         if(index < 3) {
                             return <PodiumCard firstName={person.firstName} lastName={person.lastName} rank={index + 1}/>
                         }
+                        return ""
                     })}
                 </div>
                

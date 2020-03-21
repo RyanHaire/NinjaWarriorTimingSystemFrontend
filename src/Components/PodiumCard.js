@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom';
 import '../styles/PodiumCard.css';
 
 export default class PodiumCard extends Component {
 
     checkRank(rank) {
-        if(rank == 1) {
-            return <div><img src="/images/gold-medal.png"/></div>
-        } else if(rank == 2) {
-            return <div><img src="/images/silver-medal.png"/></div>
+        if(rank === 1) {
+            return <div><img alt="gold medal" src="/images/gold-medal.png"/></div>
+        } else if(rank === 2) {
+            return <div><img alt="silver medal" src="/images/silver-medal.png"/></div>
         } else {
-            return <div><img src="/images/bronze-medal.png"/></div>
+            return <div><img alt="bronze medal" src="/images/bronze-medal.png"/></div>
         }
     }
 

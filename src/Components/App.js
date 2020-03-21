@@ -4,7 +4,7 @@ import Header from '../Templates/Header';
 import Footer from '../Templates/Footer';
 import Home from '../Pages/Home';
 import Leaderboards from '../Pages/Leaderboards';
-import '../styles/Global.css';
+import Login from '../Pages/Login';
 
 export default class App extends Component {
     render() {
@@ -17,7 +17,7 @@ export default class App extends Component {
                             <Route path='/' exact component={Home}></Route>
                             <Route path='/leaderboards/:id' component={Leaderboards}/>
                             <Route path='/leaderboards' component={Leaderboards}/>
-                            
+                            <Route path='/login' component={Login}/>
                         </Switch>
                         
                     </div>

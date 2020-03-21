@@ -23,3 +23,12 @@ main {
     justify-content: center;
     color: #222;
 }
+
+.block {
+ display: block;   
+}
+
+
+.inline-block {
+    display: inline-block;   
+   }

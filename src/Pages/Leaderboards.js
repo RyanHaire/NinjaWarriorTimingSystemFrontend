@@ -33,7 +33,7 @@ export default class Leaderboards extends Component {
 
     render() {
         var renderIt = null
-        if(this.props.match.params.id == undefined) {
+        if(this.props.match.params.id === undefined) {
             renderIt = this.state.speedWalls.map(c => {
                 return <Card name={c.name} content={c.description} id={c.id} key={c.id}/>
             });
