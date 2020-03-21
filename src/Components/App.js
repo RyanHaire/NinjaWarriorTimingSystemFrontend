@@ -5,6 +5,7 @@ import Footer from '../Templates/Footer';
 import Home from '../Pages/Home';
 import Leaderboards from '../Pages/Leaderboards';
 import Login from '../Pages/Login';
+import Registration from '../Pages/Registration';
 
 export default class App extends Component {
     render() {
@@ -18,6 +19,7 @@ export default class App extends Component {
                             <Route path='/leaderboards/:id' component={Leaderboards}/>
                             <Route path='/leaderboards' component={Leaderboards}/>
                             <Route path='/login' component={Login}/>
+                            <Route path='/registration' component={Registration}/>
                         </Switch>
                         
                     </div>

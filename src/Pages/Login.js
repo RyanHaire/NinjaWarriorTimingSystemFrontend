@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/Login.css'
+import '../styles/LoginRegistration.css'
 
 export default class Login extends Component {
 
@@ -9,7 +9,7 @@ export default class Login extends Component {
             username: '',
             password: '',
             usernameError: '',
-            passwordErrors: '',
+            passwordError: '',
             resMessage: '',
         }
 
@@ -26,9 +26,18 @@ export default class Login extends Component {
         this.setState({password: event.target.value})
     }
 
+    hasSpecialChars(str) {
+        var regex = /^[a-zA-Z0-9!@#\$%\^\&*\)\(+=._-]+$/g
+        return regex(str)
+    }
+
     handleSubmit(event) {
         event.preventDefault()
-        
+        if(this.hasSpecialChars(this.state.username)) {
+            this.setState({
+                usernameError: 'username cannot contain special characters'
+            })
+        }
     }
 
 
