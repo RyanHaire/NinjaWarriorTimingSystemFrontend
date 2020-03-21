@@ -30,5 +30,27 @@
 .form-error {
     color: red;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
+    display: block;
+}
+
+.general-error {
+    color: red;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+.fa-exclamation-circle {
+    color: red;
 }

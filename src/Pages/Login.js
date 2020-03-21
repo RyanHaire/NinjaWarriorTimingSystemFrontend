@@ -33,11 +33,7 @@ export default class Login extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        if(this.hasSpecialChars(this.state.username)) {
-            this.setState({
-                usernameError: 'username cannot contain special characters'
-            })
-        }
+       
     }
 
 
