@@ -20,7 +20,7 @@ export default class Leaderboards extends Component {
         console.log(this.props.match.params.id)
 
         let currentComponent = this;
-        axios.get('https://localhost:5001/api/speedwalls')
+        axios.get('http://localhost:5000/api/speedwalls')
         .then(function(response) {
             currentComponent.setState({
                 speedWalls: response.data

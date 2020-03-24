@@ -122,7 +122,9 @@ export default class Registration extends Component {
             })
         }
 
-        axios.post('http://localhost:5000', {
+
+        // sending form data to endpoint to create a new user
+        axios.post('http://localhost:5000/users', {
             username: this.state.username,
             password: this.state.password,
             firstName: this.state.firstName,

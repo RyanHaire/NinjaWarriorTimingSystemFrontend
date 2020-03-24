@@ -16,7 +16,7 @@ export default class LeaderboardTable extends Component {
         
         var newArr = this.state.errors
 
-        axios.get(`https://localhost:5001/api/times/speedwall/${wallId}`)
+        axios.get(`http://localhost:5000/api/times/speedwall/${wallId}`)
         .then((res) => {
             component.setState({
                 userTimes: res.data
