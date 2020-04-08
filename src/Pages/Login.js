@@ -39,7 +39,7 @@ export default class Login extends Component {
 
     render() {
         return (
-            <main>
+            <main className="login-container">
                 <div className="form-container">
                     <h2 className="form-title">Member Login</h2>
                     <form onSubmit={this.handleSubmit}>

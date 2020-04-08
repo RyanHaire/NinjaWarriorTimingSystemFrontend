@@ -54,3 +54,8 @@
 .fa-exclamation-circle {
     color: red;
 }
+
+.login-container {
+    display: flex;
+    justify-content: center;
+}

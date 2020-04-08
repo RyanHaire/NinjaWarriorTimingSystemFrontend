@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LeaderboardTable from '../Components/LeaderboardTable';
 import Card from '../Components/Card';
 import axios from 'axios';
+import '../styles/Leaderboard.css';
 
 export default class Leaderboards extends Component {
     
@@ -9,17 +10,10 @@ export default class Leaderboards extends Component {
         speedWalls: []
     }
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            speedWalls: []
-        }   
-    }
-
     componentDidMount() {
-        console.log(this.props.match.params.id)
-
         let currentComponent = this;
+        
+        //axios.get('http://142.55.32.86:50171/api/speedwalls')
         axios.get('http://localhost:5000/api/speedwalls')
         .then(function(response) {
             currentComponent.setState({
@@ -42,7 +36,9 @@ export default class Leaderboards extends Component {
         }
         return (
             <main>
-                {renderIt}
+                <div className="speedwall-card-container">
+                    {renderIt}
+                </div>
             </main>
            
         );

@@ -8,7 +8,7 @@ export default class Card extends Component {
         return (
             <div className="card">
                 <div className='card-top'>
-                    <img className="card-top-img" alt="speed wall" src="/images/speed-wall.jpg"></img>
+                    <img className="card-top-img" alt="speed wall" src="/images/speed-wall.JPG"></img>
                 </div>
                 <div className='card-bottom'>
                     <div className='card-title'>

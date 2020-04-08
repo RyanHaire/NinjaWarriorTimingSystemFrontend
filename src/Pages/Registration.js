@@ -59,8 +59,8 @@ export default class Registration extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        if(this.state.username == '' || this.state.password == '' || this.state.confirmPassword == '' 
-        || this.state.firstName == '' || this.state.lastName == '' || this.state.email == ''){
+        if(this.state.username === '' || this.state.password === '' || this.state.confirmPassword === '' 
+        || this.state.firstName === '' || this.state.lastName === '' || this.state.email === ''){
             this.setState({
                 showError: true,
                 generalError: 'no fields can be empty'
@@ -68,7 +68,7 @@ export default class Registration extends Component {
         }
         // check if password length is greater than 8
         // and check if the error message is already shown
-        if(this.state.password.length < 8 && !this.state.passwordErrors.includes('Password needs to be 8 or more characters') && this.state.password != '') {
+        if(this.state.password.length < 8 && !this.state.passwordErrors.includes('Password needs to be 8 or more characters') && this.state.password !== '') {
             this.setState({
                 passwordErrors: [...this.state.passwordErrors, 'Password needs to be 8 or more characters']
                
@@ -77,14 +77,14 @@ export default class Registration extends Component {
 
         // check if password doesnt have a number 
         // and check if error message is already shown
-        if(!this.hasNumbers(this.state.password) && !this.state.passwordErrors.includes('password needs to contain atleast one number') && this.state.password != '') {
+        if(!this.hasNumbers(this.state.password) && !this.state.passwordErrors.includes('password needs to contain atleast one number') && this.state.password !== '') {
             this.setState({
                 passwordErrors: [...this.state.passwordErrors, 'password needs to contain atleast one number']
                
             })
         }
 
-        if(this.state.password != this.state.confirmPassword) {
+        if(this.state.password !== this.state.confirmPassword) {
             this.setState({
                 confirmPasswordError: 'it is not the same password'
             })
@@ -92,7 +92,7 @@ export default class Registration extends Component {
 
         // check if email is not in email format
         // set error message to be shown
-        if(!this.isEmail(this.state.email)  && this.state.email != '') {
+        if(!this.isEmail(this.state.email)  && this.state.email !== '') {
             this.setState({
                 emailError: 'please enter a valid email'
             })

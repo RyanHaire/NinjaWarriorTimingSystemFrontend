@@ -15,7 +15,8 @@ export default class LeaderboardTable extends Component {
         let component = this;
         
         var newArr = this.state.errors
-
+        
+        //axios.get(`http://142.55.32.86:50171/api/times/speedwall/${wallId}`)
         axios.get(`http://localhost:5000/api/times/speedwall/${wallId}`)
         .then((res) => {
             component.setState({
@@ -24,7 +25,7 @@ export default class LeaderboardTable extends Component {
         })
         .catch((err) => {
             newArr.push(err)
-            this.setState({
+            component.setState({
                 errors: newArr
             })
         })
@@ -34,7 +35,7 @@ export default class LeaderboardTable extends Component {
         return (
             <div className="leaderboard-table-container">
                 <div className="podium-container"> 
-                    {this.state.userTimes.map((person,index) => {
+                    {this.state.userTimes.map((person, index) => {
                         if(index < 3) {
                             return <PodiumCard firstName={person.firstName} lastName={person.lastName} rank={index + 1}/>
                         }

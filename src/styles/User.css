@@ -1,0 +1,14 @@
+
+.user-btn-container {
+    text-align: center;
+}
+
+.speedwalls-btn-container {
+    display: flex;
+}
+
+.speedwall-btn {
+    border: 1px solid grey;
+    background-color: white;
+    padding: 20px;
+}
