@@ -5,6 +5,7 @@
 
 .speedwalls-btn-container {
     display: flex;
+    justify-content: center;
 }
 
 .speedwall-btn {

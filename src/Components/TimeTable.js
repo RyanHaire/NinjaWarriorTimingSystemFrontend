@@ -10,6 +10,14 @@ export default class LeaderboardTable extends Component {
     }
 
     componentDidMount() {
+        this.callApi();
+    }
+
+    componentDidUpdate() {
+        this.callApi();
+    }
+
+    callApi() {
         var wallId = this.props.id
         var username = this.props.username
         let component = this;
@@ -28,7 +36,6 @@ export default class LeaderboardTable extends Component {
                 error: "Could not find any times for the user."
             })
         })
-      
     }
 
     render() {
@@ -48,13 +55,13 @@ export default class LeaderboardTable extends Component {
                     {/*console.log(this.state.userTimes[0].times)*/}
                     {this.state.times.map((time, index) => {
                       console.log(time)
-                        /*return( 
+                        return( 
                             <tr key={index} className="time-table-tr">
                                 <td className="time-table-td rank">{index + 1}</td>
                                 <td className="time-table-td">{time.time}</td>
-                                <td className="time-table-td">{time.time}</td>
+                                <td className="time-table-td">{time.date}</td>
                             </tr>
-                        )*/
+                        )
 
                     })}
                     </tbody>

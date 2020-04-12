@@ -4,15 +4,14 @@ import axios from 'axios'
 import {Link} from 'react-router-dom'
 import TimeTable from '../Components/TimeTable'
 
-export default class Home extends Component {
+export default class User extends Component {
 
     state = {   
         userExists: false,
         speedWalls: [],
         username: "",
         wallId: null,
-        times: [],
-        error: ""
+        error: null
     }
     
     componentDidMount() {
@@ -57,8 +56,9 @@ export default class Home extends Component {
         console.log(e.target.value)
         this.setState({
             wallId: e.target.value
+        }, () => {
+            console.log(this.state.wallId)
         })
-        
     }
     
     render() {
@@ -77,6 +77,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                     {this.state.wallId != null && <TimeTable id={this.state.wallId} username={this.state.username}/>}
+                    {this.state.error != null && <p>{this.state.error}</p>}
                 </main>
             )
         } else {
